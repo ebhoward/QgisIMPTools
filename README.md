@@ -1,5 +1,5 @@
-# Quantum IPMP Tools
-QGIS Processing Toolbox scripts for supporting industrial park layout design work
+# IMP Tools
+IMP Tools are available for download here as QGIS Processing Toolbox scripts for supporting industrial park layout design work.
 
 
 ### Pre-requisites
