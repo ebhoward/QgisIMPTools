@@ -53,10 +53,10 @@ class Landuse(QgsProcessingAlgorithm):
         return Landuse()
         
     def group(self):
-        return 'Quantum IPMP Tools'
+        return 'IMP Tools'
 
     def groupId(self):
-        return 'ipmp'
+        return 'imp'
 
     def shortHelpString(self):
         return ( 'Create landuse polygons '
@@ -85,7 +85,7 @@ class Landuse(QgsProcessingAlgorithm):
             self.INPUT3, 'INPUT3: Site boundary line',
             types=[QgsProcessing.TypeVectorLine],defaultValue='Site_boundary'))    
         self.addParameter(QgsProcessingParameterMapLayer(
-            self.INPUT4, 'INPUT4: Road node (junction)',
+            self.INPUT4, 'INPUT4: Road node',
             types=[QgsProcessing.TypeVectorPoint],defaultValue='Node'))
         self.addParameter(QgsProcessingParameterMapLayer(
             self.INPUT5, 'INPUT5: Road segment',
@@ -186,12 +186,12 @@ class Landuse(QgsProcessingAlgorithm):
         sink.addFeatures(lulay.getFeatures(),QgsFeatureSink.FastInsert)
         
         
-        feedback.pushInfo( '\n\n #########################################\n')
+        feedback.pushInfo( '\n\n ######################################\n')
         feedback.pushInfo( '\n\n {} LANDUSE POLYGONS CREATED '.format(lulay.featureCount() ) )
         feedback.pushInfo( 'TOTAL AREA: {} HECTARES'.format(totarea) )       
         feedback.pushInfo( 'TOTAL ROAD AREA: {} HECTARES OR {}%'.format(totrdarea, round((totrdarea/totarea*100),1) ) )        
         feedback.pushInfo( '\n\nOshLanduse.py v2.1\n'
-                           '#########################################\n\n')
+                           '######################################\n\n')
          
         return {self.OUTPUT: self.dest_id }
         

@@ -66,10 +66,10 @@ class SegmentGradient(QgsProcessingAlgorithm):
         return 'Segment gradient'
 
     def group(self):
-        return 'Quantum IPMP Tools'
+        return 'IMP Tools'
 
     def groupId(self):
-        return 'ipmp'
+        return 'imp'
 
     def shortHelpString(self):
         return ( 'Calculate road segment gradients\n'
@@ -280,7 +280,7 @@ class SegmentGradient(QgsProcessingAlgorithm):
             
         feedback.pushInfo( '\nGRADIENTS CALCULATED FOR {} SEGMENTS'.format(seglay.featureCount()) )
 
-        feedback.pushInfo( '\n\nOshSegmentGradient.py v2.1\n'
+        feedback.pushInfo( '\nOshSegmentGradient.py v2.1\n'
                            '#############################\n\n')
 
         return {self.OUTPUT: self.dest_id}   

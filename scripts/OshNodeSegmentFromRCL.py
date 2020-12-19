@@ -71,9 +71,9 @@ class NodeSegmentFromRCL(QgsProcessingAlgorithm):
         return NodeSegmentFromRCL()
         
     def group(self):
-        return 'Quantum IPMP Tools'
+        return 'IMP Tools'
     def groupId(self):
-        return 'ipmp'
+        return 'imp'
 
     def shortHelpString(self):
         return ( 'Create nodes (junctions) and segments from road center lines'

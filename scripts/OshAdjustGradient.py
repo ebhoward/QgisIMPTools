@@ -69,10 +69,10 @@ class AdjustGradient(QgsProcessingAlgorithm):
         return ('Adjust segment gradient')
 
     def group(self):
-        return ('Quantum IPMP Tools')
+        return ('IMP Tools')
 
     def groupId(self):
-        return 'ipmp'
+        return 'imp'
 
     def shortHelpString(self):
         return ('Adjust all road segment gradients and junction node elevations'

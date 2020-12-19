@@ -44,10 +44,10 @@ class PlatformAccess(QgsProcessingAlgorithm):
         return self.tr('Platform access point')
 
     def group(self):
-        return 'Quantum IPMP Tools'
+        return 'IMP Tools'
 
     def groupId(self):
-        return 'ipmp'
+        return 'imp'
 
     def shortHelpString(self):
         return ( 'Create platform access points'

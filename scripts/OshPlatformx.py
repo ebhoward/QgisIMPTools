@@ -48,10 +48,10 @@ class Platformx (QgsProcessingAlgorithm):
         return 'Platform extended to road center line'
 
     def group(self):
-        return 'Quantum IPMP Tools'
+        return 'IMP Tools'
 
     def groupId(self):
-        return 'ipmp'
+        return 'imp'
 
     def createInstance(self):
         return Platformx()
@@ -70,11 +70,11 @@ class Platformx (QgsProcessingAlgorithm):
     def initAlgorithm(self, config=None):
     
         self.addParameter(QgsProcessingParameterVectorLayer(
-            self.INPUT, 'INPUT: Node', 
+            self.INPUT, 'INPUT: Road node', 
             defaultValue='Node',types=[QgsProcessing.TypeVectorPoint]) )
             
         self.addParameter(QgsProcessingParameterVectorLayer(
-            self.INPUT2, 'INPUT2: Segment', 
+            self.INPUT2, 'INPUT2: Road segment', 
             defaultValue='Segment',types=[QgsProcessing.TypeVectorLine]) )
             
         self.addParameter(QgsProcessingParameterVectorLayer(
@@ -187,10 +187,10 @@ class Platformx (QgsProcessingAlgorithm):
         layer.loadNamedStyle(platqml)
         
 
-        feedback.pushInfo( '\n\n #########################################\n')
+        feedback.pushInfo( '\n\n ##################################\n')
         feedback.pushInfo( '\n\n{} PLATFORMX CREATED'.format(layer.featureCount() ) )
         feedback.pushInfo( '\n\nOshPlatformx.py v2.1\n'
-                           '#########################################\n\n')            
+                           '##################################\n\n')            
         
         return {self.OUTPUT: algoutlay}
         

@@ -54,10 +54,10 @@ class RoadCasing(QgsProcessingAlgorithm):
         return 'Road casing'
 
     def group(self):
-        return 'Quantum IPMP Tools'
+        return 'IMP Tools'
 
     def groupId(self):
-        return 'ipmp'
+        return 'imp'
 
     def createInstance(self):
         return RoadCasing()
