@@ -16,18 +16,20 @@ You need to have QGIS 3.16 installed.
 
     If the folder does not exist, create it by typing in your desired folder.
 
-3. Create and save a new QGIS Project.  Copy the unzipped *qsettings folder and all its files* into you newly created project folder.  You can check the location of the project folder as follows:
-    QGIS >Project >Properties >Variables >Project >project_folder
+3. Copy the samples folder and its qsettings folder to a working folder.  You can open the Tutorial.qgz project in QGIS.  
 
-3. Set the project CRS:
+4. Alternatively, you may prefer to create and save a new QGIS Project.  In this case, copy the qsettings folder and all its files into the folder which has your newly created qgz QGIS project file.  
+
+
+    - Set the project CRS:
     QGIS >Project >Properties >CRS>
 
-4. Optional: click on the + button at the bottom right and add a new variable project_font_size.  Type in your desired size - for example, 8, or 14 et cetera.  
 
-5. Copy all the files in the unzipped samples folder into your newly created QGIS project folder.  Drag and drop the files into QGIS.
+    - Optional: click on the + button at the bottom right and add a new variable project_font_size.  Type in your desired size - for example, 8, or 14 et cetera.  
 
-### Using the Quantum IPMP Tools
-1. The Quantum IPMP Tools are available from:
+
+### Using the IMP Tools
+1. The IMP Tools are available from:
     QGIS > Processing >Toolbox >Scripts
     
 2. Simple documentation is available by clicking the Wiki button in Github.
