@@ -18,7 +18,7 @@ You need to have QGIS 3.16 installed.
 
 3. Copy the samples folder and its qsettings sub-folder to a working folder.  You can open the Tutorial.qgz project in QGIS.  
 
-4. Alternatively, you may prefer to create and save a new QGIS Project.  In this case, copy the qsettings folder and all its files into the folder which has your newly created qgz QGIS project file.  
+4. Alternatively, you may prefer to create and save a new QGIS Project.  In this case, copy the files in the sample folder and the qsettings sub-folder and all its files into the folder which has your newly created qgz QGIS project file.  
 
 
     - Set the project CRS:
