@@ -24,7 +24,7 @@ You need to have QGIS 3.16 installed.
 
     - Set the project CRS for your QGIS project:
     
-        QGIS >Project >Properties >CRS>
+            QGIS >Project >Properties >CRS>
 
     - Optional: click on the + button at the bottom right and add a new variable project_font_size.  Type in your desired size - for example, 8, or 14 et cetera.  
 
