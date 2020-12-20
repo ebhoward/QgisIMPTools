@@ -8,9 +8,9 @@ You need to have QGIS 3.16 installed.
 <!-- Additionally, install the Qgis2threejs plugin -->
 
 ### Installation
-1. In Github, click on the green Code button and then Download ZIP.  Unzip after downloading.
+1. In Github, click on the green Code button and then Download ZIP.  Unzip (extract the files) after downloading.
 
-2. Copy *all the files only* in the unzipped scripts folder to the QGIS Processing Scripts folder.  You can check the location of the QGIS Scripts folder as follows:
+2. Copy *all the files only* in the unzipped **scripts** folder to the QGIS Processing Scripts folder.  You can check the location of the QGIS Scripts folder as follows:
 
     QGIS >Setings >Options >Processing >Scripts
 
