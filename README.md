@@ -10,26 +10,26 @@ You need to have QGIS 3.16 installed.
 ### Installation
 1. In Github, click on the green Code button and then Download ZIP.  Unzip (extract the files) after downloading.
 
-2. Copy *all the files only* in the unzipped **scripts** folder to the QGIS Processing Scripts folder.  You can check the location of the QGIS Scripts folder as follows:
+2. In the samples folder, double-click Tutorial to start QGIS.
+
+3. Check the location of your QGIS Processing Scripts folder as follows:
 
     QGIS >Setings >Options >Processing >Scripts
 
     If the folder does not exist, create it by typing in your desired folder.
 
-3. Copy the samples folder and its qsettings sub-folder to a working folder.  You can open the Tutorial.qgz project in QGIS.  
+4. Copy *all the files only* in the unzipped **scripts** folder to the QGIS Processing Scripts folder.  
 
-4. Alternatively, you may prefer to create and save a new QGIS Project.  In this case, copy the files in the sample folder and the qsettings sub-folder and all its files into the folder which has your newly created qgz QGIS project file.  
+5. If you wish to use the IMP Tools on your own data instead of the sample data with Tutorial.qgz, do the following:
 
-
-    - Set the project CRS:
+    - Set the project CRS for your QGIS project:
     QGIS >Project >Properties >CRS>
-
 
     - Optional: click on the + button at the bottom right and add a new variable project_font_size.  Type in your desired size - for example, 8, or 14 et cetera.  
 
 
 ### Using the IMP Tools
-1. The IMP Tools are available from:
+1. The IMP Tools are now available from the QGIS Processing Toolbox panel:
     QGIS > Processing >Toolbox >Scripts
     
 2. Simple documentation is available by clicking the Wiki button in Github.
