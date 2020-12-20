@@ -1,68 +1,83 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis minScale="100000000" simplifyMaxScale="1" maxScale="0" simplifyLocal="1" styleCategories="AllStyleCategories" simplifyAlgorithm="0" readOnly="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" version="3.16.0-Hannover" simplifyDrawingTol="1" labelsEnabled="0">
+<qgis hasScaleBasedVisibilityFlag="0" readOnly="0" simplifyAlgorithm="0" simplifyLocal="1" maxScale="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" simplifyDrawingHints="1" labelsEnabled="0" minScale="100000000" version="3.16.1-Hannover">
+  <renderer-3d type="vector" layer="Platform_2b3719ea_79fb_4673_92e3_5c79b300ddcf">
+    <vector-layer-3d-tiling zoom-levels-count="3" show-bounding-boxes="0"/>
+    <symbol type="polygon" material_type="phong">
+      <data height="0" alt-clamping="absolute" invert-normals="0" add-back-faces="1" rendered-facade="3" alt-binding="vertex" extrusion-height="0" culling-mode="no-culling"/>
+      <material specular="255,255,255,255" ambient="22,50,39,255" diffuse="179,179,179,255" shininess="0"/>
+      <data-defined-properties>
+        <Option type="Map">
+          <Option type="QString" name="name" value=""/>
+          <Option name="properties"/>
+          <Option type="QString" name="type" value="collection"/>
+        </Option>
+      </data-defined-properties>
+      <edges color="0,0,0,255" width="1" enabled="0"/>
+    </symbol>
+  </renderer-3d>
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <temporal durationUnit="min" endField="" fixedDuration="0" enabled="0" mode="0" startExpression="" accumulate="0" startField="" endExpression="" durationField="">
+  <temporal mode="0" enabled="0" endField="" accumulate="0" endExpression="" startExpression="" startField="" fixedDuration="0" durationField="" durationUnit="min">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="singleSymbol">
-    <symbols>
-      <symbol name="0" force_rhr="0" clip_to_extent="1" alpha="1" type="fill">
-        <layer pass="0" locked="0" enabled="1" class="SimpleFill">
-          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-          <prop v="103,139,133,255" k="color"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="53,121,177,255" k="outline_color"/>
-          <prop v="solid" k="outline_style"/>
-          <prop v="0.96" k="outline_width"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="solid" k="style"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-    </symbols>
-    <rotation/>
-    <sizescale/>
-  </renderer-v2>
+  <renderer-v2 type="nullSymbol"/>
   <customproperties>
-    <property value="false" key="OnConvertFormatRegeneratePrimaryKey"/>
+    <property key="OnConvertFormatRegeneratePrimaryKey" value="false"/>
   </customproperties>
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
     <activeChecks type="StringList">
-      <Option value="" type="QString"/>
+      <Option type="QString" value=""/>
     </activeChecks>
     <checkConfiguration/>
   </geometryOptions>
   <legend type="default-vector"/>
   <referencedLayers/>
-  <fieldConfiguration/>
-  <aliases/>
-  <defaults/>
-  <constraints/>
-  <constraintExpressions/>
+  <fieldConfiguration>
+    <field name="plotid" configurationFlags="None">
+      <editWidget type="">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="platz" configurationFlags="None">
+      <editWidget type="">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+  </fieldConfiguration>
+  <aliases>
+    <alias name="" field="plotid" index="0"/>
+    <alias name="" field="platz" index="1"/>
+  </aliases>
+  <defaults>
+    <default applyOnUpdate="0" field="plotid" expression=""/>
+    <default applyOnUpdate="0" field="platz" expression=""/>
+  </defaults>
+  <constraints>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" field="plotid" constraints="0"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" field="platz" constraints="0"/>
+  </constraints>
+  <constraintExpressions>
+    <constraint exp="" desc="" field="plotid"/>
+    <constraint exp="" desc="" field="platz"/>
+  </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
     <columns/>
   </attributetableconfig>
   <conditionalstyles>
