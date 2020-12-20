@@ -32,7 +32,7 @@ You need to have QGIS 3.16 installed.
 ### Using the IMP Tools
 1. The IMP Tools are now available from the QGIS Processing Toolbox panel:
 
-    QGIS > Processing >Toolbox >Scripts
+        QGIS > Processing >Toolbox >Scripts
     
 2. Simple documentation is available by clicking the Wiki button in Github.
         
