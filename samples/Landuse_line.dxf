@@ -33,7 +33,7 @@ $INSBASE
   9
 $EXTMIN
  10
-654968.0635628006
+654922.4291194028
  20
 9235955.91337165
  30
@@ -41,9 +41,9 @@ $EXTMIN
   9
 $EXTMAX
  10
-657790.4399339825
+658033.0736317884
  20
-9239301.642658336
+9239537.078516894
  30
 0.0
   9
@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2459203.854317129
+2459205.495057870
   9
 $TDUUPDATE
  40
-2459203.520983796
+2459205.161724537
   9
 $TDINDWG
  40
-0.2538657407
+0.2567013889
   9
 $TDUSRTIMER
  40
-0.2538657407
+0.2567013889
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-999AAE5
+999AB3C
   9
 $SURFTAB1
  70
@@ -937,7 +937,7 @@ $FINGERPRINTGUID
   9
 $VERSIONGUID
   2
-{A2207298-B275-3643-9619-B17D52D8E75E}
+{E2B17BDB-121B-E44E-A30B-589277EEA31A}
   9
 $EXTNAMES
 290
@@ -1263,7 +1263,7 @@ ObjectDBX Classes
  90
         0
  91
-        1
+        2
 280
      0
 281
@@ -1389,9 +1389,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-5216.880219672943
+761.9505145789889
  22
--1081.832835250412
+-471.6389953354028
  13
 0.0
  23
@@ -1417,7 +1417,7 @@ AcDbViewportTableRecord
  37
 0.0
  40
-8813.933192070646
+7614.681874343657
  41
 1.907017543859648
  42
@@ -1737,7 +1737,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-     5
+    15
   0
 LAYER
   5
@@ -1787,7 +1787,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Plot_line
+Landuse_line
  70
      0
  62
@@ -1802,114 +1802,6 @@ F
 99999AC
 348
 0
-  0
-LAYER
-  5
-999A7B7
-330
-77
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-40
- 70
-     2
- 62
-     1
-  6
-CONTINUOUS
-370
-    -3
-390
-F
-347
-99999AC
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-
-1001
-AcCmTransparency
-1071
-        0
-  0
-LAYER
-  5
-999A7B8
-330
-77
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-30
- 70
-     2
- 62
-   211
-  6
-CONTINUOUS
-370
-    -3
-390
-F
-347
-99999AC
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-
-1001
-AcCmTransparency
-1071
-        0
-  0
-LAYER
-  5
-999A7B9
-330
-77
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-20
- 70
-     2
- 62
-   151
-  6
-CONTINUOUS
-370
-    -3
-390
-F
-347
-99999AC
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-
-1001
-AcCmTransparency
-1071
-        0
   0
 ENDTAB
   0
@@ -4971,7 +4863,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5021,7 +4913,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5051,7 +4943,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5087,103 +4979,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999A11A
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-655908.2451076736
- 20
-9238007.055649861
- 10
-656407.7473523457
- 20
-9238184.298381844
-  0
-LWPOLYLINE
-  5
-999A186
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-657130.5919373536
- 20
-9237651.701476837
- 10
-656993.2816880456
- 20
-9238032.716367793
-  0
-LWPOLYLINE
-  5
-999A192
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656289.4168863895
- 20
-9237558.848683381
- 10
-656594.4159333354
- 20
-9237671.113419363
-  0
-LWPOLYLINE
-  5
 999A1B6
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5213,7 +5015,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5251,7 +5053,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5285,7 +5087,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5313,103 +5115,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999A30A
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656985.0416280911
- 20
-9239039.788350639
- 10
-656731.2057088577
- 20
-9238966.655197227
-  0
-LWPOLYLINE
-  5
-999A32E
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656083.5118401598
- 20
-9238235.864327355
- 10
-656356.9679972419
- 20
-9238335.690726394
-  0
-LWPOLYLINE
-  5
-999A34E
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656464.3127966871
- 20
-9238028.789965254
- 10
-656192.9845859598
- 20
-9237930.095623568
-  0
-LWPOLYLINE
-  5
 999A35E
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5443,7 +5155,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5457,7 +5169,7 @@ AcDbPolyline
  43
 0.0
  10
-657059.7179510229
+657059.717951023
  20
 9237617.26273654
  10
@@ -5471,43 +5183,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999A3B2
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-657480.8926041216
- 20
-9237618.234404505
- 10
-657086.5317372811
- 20
-9237470.349079442
-  0
-LWPOLYLINE
-  5
 999A43A
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5535,103 +5217,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999A455
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656573.9183248267
- 20
-9238618.412479096
- 10
-656451.0240489858
- 20
-9238954.606015306
-  0
-LWPOLYLINE
-  5
-999A4B4
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656078.0743714396
- 20
-9236786.214019437
- 10
-656050.5630959308
- 20
-9236861.847384338
-  0
-LWPOLYLINE
-  5
-999A527
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-657395.6917842856
- 20
-9238342.041562644
- 10
-657229.0223304619
- 20
-9238281.416344277
-  0
-LWPOLYLINE
-  5
 999A65E
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5661,7 +5253,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5705,7 +5297,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5735,7 +5327,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5759,73 +5351,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999A67E
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-655699.9650910838
- 20
-9238009.200979616
- 10
-655846.9534613554
- 20
-9237605.103938047
-  0
-LWPOLYLINE
-  5
-999A67F
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-655322.9755040082
- 20
-9237872.060409866
- 10
-655469.8465655201
- 20
-9237467.933104497
-  0
-LWPOLYLINE
-  5
 999A688
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5849,43 +5381,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999A68B
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-655434.4472972855
- 20
-9237910.484503661
- 10
-655580.7496093677
- 20
-9237508.273557393
-  0
-LWPOLYLINE
-  5
 999A69F
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5903,7 +5405,7 @@ AcDbPolyline
  20
 9236963.325418535
  10
-657592.6632823628
+657592.6632823629
  20
 9236769.757751886
  10
@@ -5913,43 +5415,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999A6A5
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656605.1685599845
- 20
-9236806.028514882
- 10
-657245.2736861875
- 20
-9237038.863699517
-  0
-LWPOLYLINE
-  5
 999A6AA
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -5979,7 +5451,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -6003,43 +5475,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999A99C
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-657171.13757652
- 20
-9238455.178783976
- 10
-657329.7220420531
- 20
-9238511.450691104
-  0
-LWPOLYLINE
-  5
 999A99F
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -6063,43 +5505,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999A9A0
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-657276.0963499255
- 20
-9238682.410925196
- 10
-657106.6876193341
- 20
-9238617.736114116
-  0
-LWPOLYLINE
-  5
 999A9A1
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -6123,193 +5535,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999A9AA
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656594.4159333361
- 20
-9237671.113419363
- 10
-657359.2551920143
- 20
-9237952.637175936
-  0
-LWPOLYLINE
-  5
-999A9AB
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656654.7089440831
- 20
-9237505.357263527
- 10
-656157.3828654326
- 20
-9237322.131866127
-  0
-LWPOLYLINE
-  5
-999A9AC
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656407.7473523457
- 20
-9238184.298381844
- 10
-657171.1375765208
- 20
-9238455.178783976
-  0
-LWPOLYLINE
-  5
-999A9AD
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656717.7469007089
- 20
-9237332.054765728
- 10
-656413.4232017505
- 20
-9237217.933378621
-  0
-LWPOLYLINE
-  5
-999A9AE
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-657086.5317372803
- 20
-9237470.34907944
- 10
-656717.7469007089
- 20
-9237332.054765728
-  0
-LWPOLYLINE
-  5
-999AA5F
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656970.4884514592
- 20
-9237199.747287501
- 10
-657054.2930261007
- 20
-9236964.074891718
-  0
-LWPOLYLINE
-  5
 999AA72
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -6333,43 +5565,13 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-999AA8A
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-657289.9521344446
- 20
-9238712.532611721
- 10
-657224.0700654173
- 20
-9238870.413229548
-  0
-LWPOLYLINE
-  5
 999AA98
 330
 6D
 100
 AcDbEntity
   8
-Plot_line
+Landuse_line
   6
 Continuous
  62
@@ -6390,36 +5592,6 @@ AcDbPolyline
 657706.9018135368
  20
 9236574.882330733
-  0
-LWPOLYLINE
-  5
-999AA9D
-330
-6D
-100
-AcDbEntity
-  8
-Plot_line
-  6
-Continuous
- 62
-    35
-100
-AcDbPolyline
- 90
-        2
- 70
-     0
- 43
-0.0
- 10
-656789.78243445
- 20
-9237134.016336266
- 10
-656875.2827757379
- 20
-9236898.96076751
   0
 ENDSEC
   0
@@ -6495,7 +5667,7 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-999AAE4
+999AB3B
   3
 AcDbVariableDictionary
 350
@@ -6801,63 +5973,63 @@ AcDbDictionary
   3
 *A10
 350
-9999C1A
+9999C22
   3
 *A11
 350
-9999C1B
+9999C14
   3
 *A12
 350
-9999C1C
+9999C15
   3
 *A13
 350
-9999C1D
+9999C16
   3
 *A14
 350
-9999C1E
+9999C17
   3
 *A15
 350
-9999C1F
+9999C18
   3
 *A16
 350
-9999C20
+9999C19
   3
 *A2
 350
-9999C21
+9999C1A
   3
 *A3
 350
-9999C22
+9999C1B
   3
 *A4
 350
-9999C14
+9999C1C
   3
 *A5
 350
-9999C15
+9999C1D
   3
 *A6
 350
-9999C16
+9999C1E
   3
 *A7
 350
-9999C17
+9999C1F
   3
 *A8
 350
-9999C18
+9999C20
   3
 *A9
 350
-9999C19
+9999C21
   3
 A0
 350
@@ -7093,7 +6265,7 @@ X-Ray
   0
 XRECORD
   5
-999AAE4
+999AB3B
 102
 {ACAD_REACTORS
 330
@@ -7231,189 +6403,93 @@ AcDbSortentsTable
 330
 6D
 331
-999A192
-  5
-999A1D6
-331
-999A1B6
-  5
-999A30A
-331
-999A527
-  5
-999A68C
-331
-999A9AE
-  5
-999A660
-331
-999A34E
-  5
-999A455
-331
-999AA8A
-  5
-999AACA
-331
-999A09A
-  5
-999A09A
-331
-999A1D6
-  5
-999A32E
-331
-999A99C
-  5
-999A17A
-331
-999A6A5
-  5
-999A7ED
-331
-999A709
-  5
-999AA3E
-331
-999A4B4
-  5
-999A67F
-331
-999A30A
-  5
-999A372
-331
-999A68B
-  5
-999A7E9
-331
-999A455
-  5
-999A677
-331
-999A9AB
-  5
-999A525
-331
-999A679
-  5
-999A7E5
-331
-999A35E
-  5
-999A465
-331
-999A9A0
-  5
-999A689
-331
-999A67E
-  5
-999A7E6
-331
 999A43A
   5
 999A675
-331
-999A186
-  5
-999A1B6
-331
-999A372
-  5
-999A4B4
-331
-999A688
-  5
-999A7E7
-331
-999AA98
-  5
-999AACB
-331
-999AA9D
-  5
-999AACC
-331
-999A6AA
-  5
-999A9E1
-331
-999AA5F
-  5
-999AAC8
-331
-999A9AD
-  5
-999A667
-331
-999A3B2
-  5
-999A527
-331
-999AA72
-  5
-999AAC9
-331
-999A65E
-  5
-999A6A2
-331
-999A9AA
-  5
-999A1EE
 331
 999A202
   5
 999A35E
 331
-999A0DE
+999A99F
   5
-999A0DE
+999A186
+331
+999A1D6
+  5
+999A32E
+331
+999A1B6
+  5
+999A30A
+331
+999AA98
+  5
+999AACB
+331
+999AA72
+  5
+999AAC9
+331
+999A09A
+  5
+999A09A
+331
+999A056
+  5
+999A056
 331
 999A672
   5
 999A6A7
 331
-999A32E
+999A709
   5
-999A3B2
+999AA3E
 331
-999A056
+999A688
   5
-999A056
-331
-999A69F
-  5
-999A7EB
-331
-999A9AC
-  5
-999A16E
-331
-999A11A
-  5
-999A11A
-331
-999A67F
-  5
-999A6A5
-331
-999A9A1
-  5
-999A69F
+999A7E7
 331
 999A1EE
   5
 999A34E
 331
+999A9A1
+  5
+999A69F
+331
+999A372
+  5
+999A4B4
+331
 999A674
   5
 999A709
 331
-999A99F
+999A69F
   5
-999A186
+999A7EB
+331
+999A6AA
+  5
+999A9E1
+331
+999A679
+  5
+999A7E5
+331
+999A0DE
+  5
+999A0DE
+331
+999A65E
+  5
+999A6A2
+331
+999A35E
+  5
+999A465
   0
 ACDBDETAILVIEWSTYLE
   5
@@ -8853,6 +7929,174 @@ AcDbScale
   0
 SCALE
   5
+9999C22
+102
+{ACAD_REACTORS
+330
+99999C0
+102
+}
+330
+99999C0
+100
+AcDbScale
+ 70
+     0
+300
+100:1_XREF
+140
+100.0
+141
+1.0
+290
+     0
+  0
+SCALE
+  5
+9999C14
+102
+{ACAD_REACTORS
+330
+99999C0
+102
+}
+330
+99999C0
+100
+AcDbScale
+ 70
+     0
+300
+1:4_XREF
+140
+1.0
+141
+4.0
+290
+     0
+  0
+SCALE
+  5
+9999C15
+102
+{ACAD_REACTORS
+330
+99999C0
+102
+}
+330
+99999C0
+100
+AcDbScale
+ 70
+     0
+300
+1:5_XREF
+140
+1.0
+141
+5.0
+290
+     0
+  0
+SCALE
+  5
+9999C16
+102
+{ACAD_REACTORS
+330
+99999C0
+102
+}
+330
+99999C0
+100
+AcDbScale
+ 70
+     0
+300
+1:8_XREF
+140
+1.0
+141
+8.0
+290
+     0
+  0
+SCALE
+  5
+9999C17
+102
+{ACAD_REACTORS
+330
+99999C0
+102
+}
+330
+99999C0
+100
+AcDbScale
+ 70
+     0
+300
+1:10_XREF
+140
+1.0
+141
+10.0
+290
+     0
+  0
+SCALE
+  5
+9999C18
+102
+{ACAD_REACTORS
+330
+99999C0
+102
+}
+330
+99999C0
+100
+AcDbScale
+ 70
+     0
+300
+1:16_XREF
+140
+1.0
+141
+16.0
+290
+     0
+  0
+SCALE
+  5
+9999C19
+102
+{ACAD_REACTORS
+330
+99999C0
+102
+}
+330
+99999C0
+100
+AcDbScale
+ 70
+     0
+300
+1:20_XREF
+140
+1.0
+141
+20.0
+290
+     0
+  0
+SCALE
+  5
 9999C1A
 102
 {ACAD_REACTORS
@@ -9040,174 +8284,6 @@ AcDbScale
 10.0
 141
 1.0
-290
-     0
-  0
-SCALE
-  5
-9999C22
-102
-{ACAD_REACTORS
-330
-99999C0
-102
-}
-330
-99999C0
-100
-AcDbScale
- 70
-     0
-300
-100:1_XREF
-140
-100.0
-141
-1.0
-290
-     0
-  0
-SCALE
-  5
-9999C14
-102
-{ACAD_REACTORS
-330
-99999C0
-102
-}
-330
-99999C0
-100
-AcDbScale
- 70
-     0
-300
-1:4_XREF
-140
-1.0
-141
-4.0
-290
-     0
-  0
-SCALE
-  5
-9999C15
-102
-{ACAD_REACTORS
-330
-99999C0
-102
-}
-330
-99999C0
-100
-AcDbScale
- 70
-     0
-300
-1:5_XREF
-140
-1.0
-141
-5.0
-290
-     0
-  0
-SCALE
-  5
-9999C16
-102
-{ACAD_REACTORS
-330
-99999C0
-102
-}
-330
-99999C0
-100
-AcDbScale
- 70
-     0
-300
-1:8_XREF
-140
-1.0
-141
-8.0
-290
-     0
-  0
-SCALE
-  5
-9999C17
-102
-{ACAD_REACTORS
-330
-99999C0
-102
-}
-330
-99999C0
-100
-AcDbScale
- 70
-     0
-300
-1:10_XREF
-140
-1.0
-141
-10.0
-290
-     0
-  0
-SCALE
-  5
-9999C18
-102
-{ACAD_REACTORS
-330
-99999C0
-102
-}
-330
-99999C0
-100
-AcDbScale
- 70
-     0
-300
-1:16_XREF
-140
-1.0
-141
-16.0
-290
-     0
-  0
-SCALE
-  5
-9999C19
-102
-{ACAD_REACTORS
-330
-99999C0
-102
-}
-330
-99999C0
-100
-AcDbScale
- 70
-     0
-300
-1:20_XREF
-140
-1.0
-141
-20.0
 290
      0
   0
@@ -17235,7 +16311,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-999AAE3
+999AB3A
   0
 XRECORD
   5
@@ -17599,7 +16675,7 @@ AcDbXrecord
   0
 CELLSTYLEMAP
   5
-999AAE3
+999AB3A
 102
 {ACAD_REACTORS
 330
