@@ -73,7 +73,7 @@ class SegmentGradient(QgsProcessingAlgorithm):
 
     def shortHelpString(self):
         return ( 'Calculate road segment gradients\n'
-               'Z values from the Digital Elevation Model are inserted into the output road segment endpoints and nodes.'
+               'Z values from the Digital elevation model are inserted into the output road segment endpoints and nodes.'
                '\n'
                'Z values for intermediate vertices in each segment are interpolated from the endpoints by distance along the segment. \n'
                '\n'
@@ -90,7 +90,7 @@ class SegmentGradient(QgsProcessingAlgorithm):
                 [QgsProcessing.TypeVectorPoint],'Node' ) )
 
         self.addParameter(QgsProcessingParameterRasterLayer(
-                self.INPUT3,'INPUT3: Digital Elevation Model',
+                self.INPUT3,'INPUT3: Digital elevation model',
                 'DEM_SRTM' ) )
 
         self.addParameter(QgsProcessingParameterNumber(

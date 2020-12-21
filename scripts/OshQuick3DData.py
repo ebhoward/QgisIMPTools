@@ -71,7 +71,7 @@ class Quick3DData(QgsProcessingAlgorithm):
 
     def shortHelpString(self):
         return ( 'Create road, platform and slope polygons with z data for quick 3D visualization \n' 
-                 'The Digital Elevation Model will be clipped to the surrounding area.\n'
+                 'The Digital elevation model will be clipped to the surrounding area.\n'
                  'The input road node and segment layers must have z values.')
 
                  
@@ -80,8 +80,8 @@ class Quick3DData(QgsProcessingAlgorithm):
             self.INPUT, 'INPUT: Road casing', 
             types=[QgsProcessing.TypeVectorLine],defaultValue='Casing'))
         self.addParameter(QgsProcessingParameterMapLayer(
-            self.INPUT2, 'INPUT2: Plot line',
-            types=[QgsProcessing.TypeVectorLine],defaultValue='Plot_line'))
+            self.INPUT2, 'INPUT2: Platform line',
+            types=[QgsProcessing.TypeVectorLine],defaultValue='Platform_line'))
             
         self.addParameter(QgsProcessingParameterMapLayer(
             self.INPUT3, 'INPUT3: Road node',
@@ -94,7 +94,7 @@ class Quick3DData(QgsProcessingAlgorithm):
             types=[QgsProcessing.TypeVectorPolygon],defaultValue='Platformx'))
             
         self.addParameter(QgsProcessingParameterRasterLayer(
-            self.INPUT6, 'INPUT6: Digital Elevation Model',
+            self.INPUT6, 'INPUT6: Digital elevation model',
             defaultValue='DEM_SRTM')) 
             
         self.addParameter(QgsProcessingParameterNumber(

@@ -61,7 +61,7 @@ class Platformx (QgsProcessingAlgorithm):
                ' and calculate platform elevation ' 
                ' based on a slightly lower value than the mean z value of the Digital elevation model cells'
                '\n'
-               'The Plot line input map layer can be an AutoCAD DXF file.'
+               'The Platform line input map layer can be an AutoCAD DXF file.'
                '\n'
                'The meanz field in the output map layer is the mean z value of DEM cells covered by the polygon. ' 
                )
@@ -78,8 +78,8 @@ class Platformx (QgsProcessingAlgorithm):
             defaultValue='Segment',types=[QgsProcessing.TypeVectorLine]) )
             
         self.addParameter(QgsProcessingParameterVectorLayer(
-            self.INPUT3, 'INPUT3: Plot line', 
-            defaultValue='Plot_line',types=[QgsProcessing.TypeVectorLine]) ) 
+            self.INPUT3, 'INPUT3: Platform line', 
+            defaultValue='Platform_line',types=[QgsProcessing.TypeVectorLine]) ) 
             
         self.addParameter(QgsProcessingParameterRasterLayer(
             self.INPUT4, 'INPUT4: Digital elevation model',

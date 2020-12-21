@@ -64,13 +64,13 @@ class Landuse(QgsProcessingAlgorithm):
                     'Road polygons are automatically identified and  '
                     'a road landuse code is inserted into the field luc.'
                     '\n'
-                    'The Plot line and Site boundary line input map layers can be AutoCAD DXF files. '
+                    'The Landuse line and Site boundary line input map layers can be AutoCAD DXF files. '
                     '\n'
                     'After running this algorithm, the user can edit and insert other landuse codes with QGIS tools.'
                     '\n'
                     'If the landuse polygons do not form correctly, '
                     'snap and trim the intersecting lines from the '
-                    'Road casing, Plot line and Site boundary line map layers.'
+                    'Road casing, Landuse line and Site boundary line map layers.'
                     )
 
                  
@@ -79,8 +79,8 @@ class Landuse(QgsProcessingAlgorithm):
             self.INPUT, 'INPUT: Road casing', 
             types=[QgsProcessing.TypeVectorLine],defaultValue='Casing'))
         self.addParameter(QgsProcessingParameterMapLayer(
-            self.INPUT2, 'INPUT2: Plot line',
-            types=[QgsProcessing.TypeVectorLine],defaultValue='Plot_line'))
+            self.INPUT2, 'INPUT2: Landuse line',
+            types=[QgsProcessing.TypeVectorLine],defaultValue='Landuse_line'))
         self.addParameter(QgsProcessingParameterMapLayer(
             self.INPUT3, 'INPUT3: Site boundary line',
             types=[QgsProcessing.TypeVectorLine],defaultValue='Site_boundary'))    
