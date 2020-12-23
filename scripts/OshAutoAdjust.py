@@ -47,11 +47,11 @@ class AutoAdjustGradientPlatform(QgsProcessingAlgorithm):
     def displayName(self):
         return 'Auto adjust road gradient and platform elevation'
 
-    def group(self):
-        return 'IMP Tools'
+    # def group(self):
+        # return 'IMP Tools'
 
-    def groupId(self):
-        return 'imp'
+    # def groupId(self):
+        # return 'imp'
 
     def shortHelpString(self):
         return 'Auto adjust road gradient to satisfy input gradient limit and auto adjust platform elevation to enable access'
@@ -516,37 +516,39 @@ class AutoAdjustGradientPlatform(QgsProcessingAlgorithm):
         
         segonplat.selectByExpression(lisexp)
         sf = segonplat.selectedFeatures()
-
-        dic = {}
-
-        for f in sf:  
-            geom = f.geometry()
-            lin = geom.constGet() 
-            if  lin.length() < 1:
-                continue
-            sz = lin.zAt(0)
-            ez = lin.zAt(-1)
-            platz = f['platz']
+        if (len(sf)>0):
             
-            platid = f['platid']
-            lid = f['lid']
+            dic = {}
 
-            if abs(platz-sz) < abs(platz-ez):   
-                pos = 0             # adjust to the startpoint: elevation and access
-                accz = round(sz,1)
-                adj = abs(platz-sz)
-            else:    
-                pos = -1
-                accz = round (ez,1)
-                adj = abs(platz-ez)
+            for f in sf:  
+                geom = f.geometry()
+                lin = geom.constGet() 
+                if  lin.length() < 1:
+                    continue
+                sz = lin.zAt(0)
+                ez = lin.zAt(-1)
+                platz = f['platz']
+                
+                platid = f['platid']
+                lid = f['lid']
+                print (platid,dic)
+                
+                if abs(platz-sz) < abs(platz-ez):   
+                    pos = 0             # adjust to the startpoint: elevation and access
+                    accz = round(sz,1)
+                    adj = abs(platz-sz)
+                else:    
+                    pos = -1
+                    accz = round (ez,1)
+                    adj = abs(platz-ez)
 
-            lis = dic.get(platid) 
-            if lis:
-                adj_in_dic = lis[0]
-                if adj < adj_in_dic:
+                lis = dic.get(platid) 
+                if lis:
+                    adj_in_dic = lis[0]
+                    if adj < adj_in_dic:
+                        dic[platid] = [adj,accz,lid,pos,sz,ez]
+                else:
                     dic[platid] = [adj,accz,lid,pos,sz,ez]
-            else:
-                dic[platid] = [adj,accz,lid,pos,sz,ez]
 
 
         platlay.selectAll()
@@ -570,8 +572,11 @@ class AutoAdjustGradientPlatform(QgsProcessingAlgorithm):
             maxdif = round (maxdif,1)        
                 
             platid = f['platid']
-            #print(platid)
-            lis = dic[platid]
+            try:
+                lis = dic[platid]
+            except:
+                feedback.reportError('\nWarning: Unable to adjust platform ' + str(platid) + '\n')
+                continue
             accz = lis[1]
             pos = lis[3]
             if pos==0:     # access at start point of segonplat

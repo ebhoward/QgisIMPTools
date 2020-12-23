@@ -32,7 +32,7 @@ from qgis.core import (QgsProcessing,
         QgsProcessingParameterString,
         QgsProcessingParameterVectorDestination,
         QgsProcessingUtils, 
-        QgsFeatureSink,
+        QgsFeatureSink
        )
 from qgis import processing
 from qgis.core import (
@@ -180,7 +180,7 @@ class AdjustPlatformAccess(QgsProcessingAlgorithm):
                 'OUTPUT': 'TEMPORARY_OUTPUT' } ,     
                 is_child_algorithm=True, context=context, feedback=feedback
                 ) ['OUTPUT']   
-
+                
         # Buffer plot boundary layer to make intersection workable
         bufferdist = 1
         layer = processing.run('native:buffer', 
@@ -189,7 +189,7 @@ class AdjustPlatformAccess(QgsProcessingAlgorithm):
                 'OUTPUT': 'TEMPORARY_OUTPUT' } ,           
                 context=context, feedback=feedback, is_child_algorithm=True
                 )['OUTPUT'] 
-
+               
         # Intersect with road center line segment
         layer = processing.run('native:intersection', 
                 {'INPUT': seglay,
@@ -197,14 +197,17 @@ class AdjustPlatformAccess(QgsProcessingAlgorithm):
                 'OUTPUT': 'TEMPORARY_OUTPUT' },
                 context=context, feedback=feedback, is_child_algorithm=True
                 )['OUTPUT']
-
+                
+        itxlay = QgsProcessingUtils.mapLayerFromString(layer, context)                
+        if itxlay.featureCount() == 0:
+                raise QgsProcessingException('\nUnable to adjust platform and access point!')
+            
         # Multipart to singleparts
         layer = processing.run('native:multiparttosingleparts', 
                 {'INPUT': layer,
                 'OUTPUT': 'TEMPORARY_OUTPUT'},
                 context=context, feedback=feedback, is_child_algorithm=True
                 )['OUTPUT']
-       
 
         # Line substring
         exp1 = str(2 * bufferdist)
@@ -217,10 +220,7 @@ class AdjustPlatformAccess(QgsProcessingAlgorithm):
                 context=context, feedback=feedback, is_child_algorithm=True
                 ) ['OUTPUT']
                 
-
         segonplat = QgsProcessingUtils.mapLayerFromString(layer, context)
-
-
         dic = {}
 
         for f in segonplat.getFeatures():  
@@ -377,8 +377,4 @@ class AdjustPlatformAccess(QgsProcessingAlgorithm):
 
 
 
-                 
-
-
         return {self.OUTPUT: self.algoutlay, self.OUTPUT2: self.dest_id2}
-     
