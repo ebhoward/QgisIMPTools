@@ -373,7 +373,8 @@ class AutoAdjustGradientPlatform(QgsProcessingAlgorithm):
             if adj !=0:
                 numnode += 1
             geom = f.geometry()
-            
+            p = geom.constGet()
+            p.setZ(z)            
             
             # add features to sink (Node_adjusted)
             g = QgsFeature()

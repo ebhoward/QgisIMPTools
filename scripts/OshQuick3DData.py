@@ -111,7 +111,7 @@ class Quick3DData(QgsProcessingAlgorithm):
             
     def processAlgorithm(self, parameters, context, feedback):
     
-        maxdistance = 50    # search for nearest Node to line vertex
+        maxdistance = 100    # search for nearest Node to line vertex
         
         # Project variables
         project = QgsProject.instance()
