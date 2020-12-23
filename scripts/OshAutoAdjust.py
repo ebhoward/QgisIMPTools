@@ -47,11 +47,11 @@ class AutoAdjustGradientPlatform(QgsProcessingAlgorithm):
     def displayName(self):
         return 'Auto adjust road gradient and platform elevation'
 
-    # def group(self):
-        # return 'IMP Tools'
+    def group(self):
+        return 'IMP Tools'
 
-    # def groupId(self):
-        # return 'imp'
+    def groupId(self):
+        return 'imp'
 
     def shortHelpString(self):
         return 'Auto adjust road gradient to satisfy input gradient limit and auto adjust platform elevation to enable access'
