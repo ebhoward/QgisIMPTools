@@ -116,7 +116,7 @@ class AutoAdjustGradientPlatform(QgsProcessingAlgorithm):
 
         # SETTINGS
         
-        maxitera = 3    # maximum number of iterations (repeat for all segments)
+        maxitera = 9    # maximum number of iterations (repeat for all segments)
 
         gradlim = self.parameterAsInt(parameters, self.GRADLIM, context) 
         fracperi = self.parameterAsInt(parameters, self.RATIO, context)  
