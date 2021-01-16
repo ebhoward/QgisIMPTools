@@ -13,6 +13,10 @@
 *   (at your option) any later version.                                   *
 *                                                                         *
 ***************************************************************************
+
+v2.11 16 Jan 2021
+Fixed line 267 ZeroDivisionError
+
 """
 
 __author__ = 'Ong See Hai'
@@ -263,9 +267,12 @@ class AdjustGradient(QgsProcessingAlgorithm):
                 if ez<sz:   # skip adjusting ez down if ez<sz
                     break
                 ezj = round((ez + ej),1)            
-
-                newgrad = abs(leng/(ezj-sz))
-                ng = round(newgrad,1)
+                
+                if ezj==sz:
+                    ng = 9999
+                else:
+                    newgrad = abs(leng/(ezj-sz))
+                    ng = round(newgrad,1)
                 d_lidgrad[lid]=ng
 
                 # update d_idz
@@ -387,7 +394,7 @@ class AdjustGradient(QgsProcessingAlgorithm):
             
         feedback.pushInfo( '\nSEGMENTS AND ' + str(i) + ' NODES ADJUSTED' ) 
         
-        feedback.pushInfo( '\n\nOshAdjustGradient.py v2.1\n' 
+        feedback.pushInfo( '\n\nOshAdjustGradient.py v2.11\n' 
                            '####################################\n\n' )
 
 

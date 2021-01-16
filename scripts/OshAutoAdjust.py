@@ -263,10 +263,13 @@ class AutoAdjustGradientPlatform(QgsProcessingAlgorithm):
                     break
                 ezj = round((ez + ej),1)            
 
-                newgrad = abs(leng/(ezj-sz))
-                ng = round(newgrad,1)
+                if ezj==sz:
+                    ng = 9999
+                else:
+                    newgrad = abs(leng/(ezj-sz))
+                    ng = round(newgrad,1)
                 d_lidgrad[lid]=ng
-
+                
                 # update d_idz
                 d_idz[eid]=ezj  
             
@@ -531,7 +534,6 @@ class AutoAdjustGradientPlatform(QgsProcessingAlgorithm):
                 
                 platid = f['platid']
                 lid = f['lid']
-                print (platid,dic)
                 
                 if abs(platz-sz) < abs(platz-ez):   
                     pos = 0             # adjust to the startpoint: elevation and access
